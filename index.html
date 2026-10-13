@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CT WEBSITES crea páginas web modernas para pequeños negocios.">
+  <title>CT WEBSITES | Diseño Web</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d12;
+      color: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    .contenedor {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #252a35;
+      background: #0b0d12;
+    }
+
+    .barra {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #3b82f6;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .portada {
+      padding: 105px 0 90px;
+      background: radial-gradient(
+        ellipse at top right,
+        #172849 0%,
+        #0b0d12 55%
+      );
+    }
+
+    .etiqueta {
+      color: #60a5fa;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: #3b82f6;
+    }
+
+    .descripcion {
+      max-width: 620px;
+      color: #aeb8c8;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .boton:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .titulo-seccion {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .subtitulo {
+      color: #aeb8c8;
+      margin-bottom: 32px;
+    }
+
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .tarjeta {
+      background: #131720;
+      border: 1px solid #292f3b;
+      border-radius: 12px;
+      padding: 26px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+      border-color: #3b82f6;
+    }
+
+    .numero {
+      color: #60a5fa;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta p {
+      color: #aeb8c8;
+      margin-bottom: 20px;
+    }
+
+    .enlace {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .enlace:hover {
+      text-decoration: underline;
+    }
+
+    .servicios {
+      background: #10131a;
+      border-top: 1px solid #252a35;
+      border-bottom: 1px solid #252a35;
+    }
+
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto .subtitulo {
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      border-top: 1px solid #252a35;
+      padding: 25px 0;
+      color: #8792a4;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .barra {
+        padding: 18px 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 16px;
+      }
+
+      .portada {
+        padding: 75px 0 65px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .titulo-seccion {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor barra">
+      <div class="logo">CT <span>WEBSITES</span></div>
+
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portada" id="inicio">
+      <div class="contenedor">
+        <p class="etiqueta">Diseño web para pequeños negocios</p>
+
+        <h1>Tu negocio merece una <span>gran web.</span></h1>
+
+        <p class="descripcion">
+          Creamos páginas web modernas, claras y adaptadas a celulares
+          para que tu negocio tenga su lugar en Internet.
+        </p>
+
+        <a class="boton" href="#proyectos">Ver mis proyectos</a>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Proyectos seleccionados</h2>
+
+        <p class="subtitulo">
+          Estos son algunos de los trabajos que estamos desarrollando.
+        </p>
+
+        <div class="proyectos">
+          <article class="tarjeta">
+            <p class="numero">PROYECTO 01 · GASTRONOMÍA</p>
+            <h3>Barrio Café</h3>
+
+            <p>
+              Página web de una cafetería ficticia con menú, fotografías,
+              ubicación y contacto por WhatsApp.
+            </p>
+
+            <a
+              class="enlace"
+              href="https://tadeoc.github.io/barrio-cafe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visitar proyecto ↗
+            </a>
+          </article>
+
+          <article class="tarjeta">
+            <p class="numero">PROYECTO 02 · PRÓXIMAMENTE</p>
+            <h3>Nuevo proyecto</h3>
+
+            <p>
+              Seguimos aprendiendo y preparando nuevas páginas web
+              para distintos tipos de negocios.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">¿Qué podemos hacer por tu negocio?</h2>
+
+        <p class="subtitulo">
+          Soluciones sencillas para mejorar tu presencia digital.
+        </p>
+
+        <div class="proyectos">
+          <article class="tarjeta">
+            <h3>Páginas web</h3>
+            <p>
+              Diseños claros para presentar tu negocio, productos y servicios.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Diseño adaptable</h3>
+            <p>
+              Páginas pensadas para verse bien tanto en computadora
+              como en celulares.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Contacto directo</h3>
+            <p>
+              Enlaces a WhatsApp, redes sociales, mapas y otros medios
+              de contacto.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor">
+        <p class="etiqueta">¿Tenés un negocio?</p>
+
+        <h2 class="titulo-seccion">Hablemos de tu proyecto</h2>
+
+        <p class="subtitulo">
+          Si necesitás una página web para tu negocio, escribinos
+          y conversemos sobre tu idea.
+        </p>
+
+        <a
+          class="boton"
+          href="mailto:ctwebsites.contacto@gmail.com?subject=Consulta%20sobre%20dise%C3%B1o%20web"
+        >
+          Escribir a CT WEBSITES
+        </a>
+
+        <p style="color: #8792a4; font-size: 14px; margin-top: 18px;">
+          ctwebsites.contacto@gmail.com
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      © 2026 CT WEBSITES · Diseño web para pequeños negocios
+    </div>
+  </footer>
+
+</body>
+</html>
